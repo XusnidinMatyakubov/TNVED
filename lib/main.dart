@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tnved/pages/Tnved.dart';
+import 'package:tnved/pages/TnvedList.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
+      // home: RandomWords(),
       home: const TNVED(),
     );
   }

@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:ticket_material/ticket_material.dart';
 import 'package:tnved/modal/TnvedCode.dart';
 import 'package:tnved/pages/ApiUrl.dart';
 import 'package:http/http.dart' as http;
@@ -31,8 +30,10 @@ class _TNVEDState extends State<TNVED> {
         "Accept": "application/json",
         "Access-Control_Allow_Origin": "*",
       });
+      // print(response.body);
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
+        print(response.body);
         setState(() {
           for (var i in data) {
             _list.add(TnvedCode.formJson(i));
@@ -82,7 +83,7 @@ class _TNVEDState extends State<TNVED> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25.0),
                 ),
-                color: Colors.blue.shade200,
+                color: Colors.orange.shade200,
                 child: ListTile(
                   leading: const Icon(Icons.search),
                   title: TextField(
@@ -114,11 +115,11 @@ class _TNVEDState extends State<TNVED> {
                               return Container();
                             })
                         : ListView.builder(
-                            itemCount: _serach.length,
+                            itemCount: _list.length,
                             itemBuilder: (context, i) {
-                              final t = _serach[i];
+                              final l = _list[i];
                               return Container(
-                                child: Text("Salom"),
+                                child: Text(l.name),
                               );
                             }),
                   ),
