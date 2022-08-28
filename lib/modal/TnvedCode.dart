@@ -1,19 +1,19 @@
 // ignore_for_file: non_constant_identifier_names
 
-class TnvedCode {
-  late final String id;
-  late final String name;
-  late final String unit1;
-  late final String unit2;
-  late final String license;
-  late final String isdeleted;
-  late final String startdate;
-  late final String finishdate;
-  late final String u1;
-  late final String u2;
+class TnvedCode<T> {
+  final T id;
+  final T name;
+  final T unit1;
+  final T unit2;
+  final T license;
+  final T isdeleted;
+  final T startdate;
+  final T finishdate;
+  final T u1;
+  final T u2;
 
-  TnvedCode(
-      {required this.id,
+  TnvedCode({
+      required this.id,
       required this.name,
       required this.unit1,
       required this.unit2,
@@ -22,7 +22,8 @@ class TnvedCode {
       required this.startdate,
       required this.finishdate,
       required this.u1,
-      required this.u2});
+      required this.u2
+      });
 
   factory TnvedCode.formJson(Map<String, dynamic> json) {
     return TnvedCode(

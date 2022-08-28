@@ -64,24 +64,83 @@ class RandomWordsState extends State<RandomWords> {
         itemBuilder: (context, i) {
           final l = _list[i];
           final alreadySaved = _saved.contains(l);
-          return ListTile(
-            title: Text(
-              "Salom",
-              style: _biggerFont,
+          return SingleChildScrollView(
+            child: Container(
+              padding: const EdgeInsets.all(10.0),
+              child: Card(
+                color: Colors.white54,
+                clipBehavior: Clip.antiAlias,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ListTile(
+                      title: Text(
+                        l.id,
+                        style: const TextStyle(
+                            fontSize: 20.0, fontWeight: FontWeight.bold),
+                      ),
+                      trailing: Icon(
+                        alreadySaved
+                            ? Icons.star_outlined
+                            : Icons.star_border_outlined,
+                        color: alreadySaved ? Colors.red : null,
+                      ),
+                      onTap: () {
+                        setState(() {
+                          if (alreadySaved) {
+                            _saved.remove(l);
+                          } else {
+                            _saved.add(l);
+                          }
+                        });
+                      },
+                    ),
+                    const Divider(
+                      color: Colors.black12,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Text(
+                              l.name,
+                              style: const TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+                        Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.end,
+                          children: [
+                            Container(
+                              color: Colors.black12,
+                              padding: const EdgeInsets.all(5.0),
+                              child: Text(
+                                l.u1,
+                                style: const TextStyle(
+                                    color: Colors.black),
+                              ),
+                            ),
+                            Container(
+                              color: Colors.black12,
+                              padding: const EdgeInsets.all(5.0),
+                              child: Text(
+                                l.startdate,
+                                style: const TextStyle(
+                                    color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
-            trailing: Icon(
-              alreadySaved ? Icons.star_outlined : Icons.star_border_outlined,
-              color: alreadySaved ? Colors.red : null,
-            ),
-            onTap: () {
-              setState(() {
-                if (alreadySaved) {
-                  _saved.remove(l);
-                } else {
-                  _saved.add(l);
-                }
-              });
-            },
           );
         });
   }
@@ -90,9 +149,9 @@ class RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Startup Name Generator'),
+        title: const Text('TNVED'),
         actions: <Widget>[
-          IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved),
+          IconButton(icon: const Icon(Icons.star_half), onPressed: _pushSaved),
         ],
       ),
       body: _buildSuggestions(),
@@ -105,10 +164,28 @@ class RandomWordsState extends State<RandomWords> {
         builder: (BuildContext context) {
           final tiles = _saved.map(
             (TnvedCode tnvedCode) {
-              return ListTile(
-                title: Text(
-                  "tnvedCode.name",
-                  style: _biggerFont,
+              return Card(
+                clipBehavior: Clip.antiAlias,
+                child: Column(
+                  children: [
+                    ListTile(
+                      title: Text(
+                        tnvedCode.id,
+                        style: _biggerFont,
+                      ),
+                    ),
+                    const Divider(
+                      color: Colors.black12,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        tnvedCode.name,
+                        style: const TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 ),
               );
             },
@@ -120,7 +197,7 @@ class RandomWordsState extends State<RandomWords> {
 
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Saved Suggestions'),
+              title: const Text('Saqlangan Tnvedlar'),
             ),
             body: ListView(children: divided),
           );
