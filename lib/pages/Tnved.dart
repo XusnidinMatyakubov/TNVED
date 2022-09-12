@@ -1,9 +1,11 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:tnved/modal/TnvedCode.dart';
 import 'package:tnved/pages/ApiUrl.dart';
 import 'package:http/http.dart' as http;
+import 'package:tnved/pages/simplified_uri.dart';
 
 class TNVED extends StatefulWidget {
   const TNVED({Key? key}) : super(key: key);
@@ -14,41 +16,16 @@ class TNVED extends StatefulWidget {
 
 class _TNVEDState extends State<TNVED> {
   final List<TnvedCode> _list = [];
-  final List<TnvedCode> _serach = [];
+  List<TnvedCode> _serach = [];
+  static TnvedCode tnvedCode = [] as TnvedCode;
 
-  var _postJson = [];
   var loading = false;
 
-  void fetchData() async {
-    setState(() {
-      loading = true;
-    });
-    _list.clear();
-    final url = Uri.parse(apiUrl);
-    try {
-      final response = await http.get(url, headers: {
-        "Accept": "application/json",
-        "Access-Control_Allow_Origin": "*",
-      });
-      // print(response.body);
-      if (response.statusCode == 200) {
-        final data = jsonDecode(response.body);
-        print("200"+response.body);
-        setState(() {
-          for (var i in data) {
-            _list.add(TnvedCode.formJson(i));
-            loading = false;
-          }
-        });
-      }
-    } catch (err) {
-      print(Icons.add);
-    }
-  }
 
-  TextEditingController controller = new TextEditingController();
+  GlobalKey<FormState> key = new GlobalKey<FormState>();
+  TextEditingController _controller = TextEditingController();
 
-  onSearch(String text) async {
+  _onSearch(String text) async {
     _serach.clear();
     if (text.isEmpty) {
       setState(() {});
@@ -60,10 +37,46 @@ class _TNVEDState extends State<TNVED> {
     setState(() {});
   }
 
+  getTnved() {
+    return tnvedCode;
+  }
+
+  Future<TnvedCode?> onSearch(String text) async {
+    setState(() {
+      loading = true;
+    });
+    _list.clear();
+    try {
+      final queryParameters = {"code": _controller.text};
+
+      final Uri uri = SimplifiedUri.uri('${apiUrl}', queryParameters);
+      final headers = {HttpHeaders.contentTypeHeader: 'application/json'};
+      final response = await http.get(uri, headers: headers);
+
+      print("Response status: ${response.statusCode}");
+      // print("Response body: ${response.body}");
+
+      var data = json.decode(response.body);
+
+      if (response.statusCode == 200) {
+          setState(() {
+            for (var i in data) {
+              _list.add(TnvedCode.fromJson(i));
+            }
+            loading = false;
+          });
+      } else {
+        print("Xatolik");
+      }
+    } catch (err) {
+      print(err);
+    }
+  }
+
+
   @override
   void initState() {
     super.initState();
-    fetchData();
   }
 
   final colorBg = Colors.grey[300];
@@ -88,19 +101,28 @@ class _TNVEDState extends State<TNVED> {
                 ),
                 color: Colors.orange.shade200,
                 child: ListTile(
-                  leading: const Icon(Icons.search),
+                  leading: IconButton(
+                    onPressed: () {
+                      _controller.clear();
+                      _list.clear();
+                      onSearch("");
+                    },
+                    icon: const Icon(Icons.cancel),
+                  ),
                   title: TextField(
-                    controller: controller,
-                    onChanged: onSearch,
+                    controller: _controller,
                     decoration: const InputDecoration(
                         hintText: "Qidiruv", border: InputBorder.none),
                   ),
                   trailing: IconButton(
                     onPressed: () {
-                      controller.clear();
-                      onSearch("");
+                      setState(() {
+                        loading = true;
+                      });
+                      onSearch(_controller.text);
                     },
-                    icon: const Icon(Icons.cancel),
+                    color: Colors.black,
+                    icon: const Icon(Icons.search),
                   ),
                 ),
               ),
@@ -110,105 +132,113 @@ class _TNVEDState extends State<TNVED> {
                     child: CircularProgressIndicator(),
                   )
                 : Expanded(
-                    child: _serach.length != 0 || controller.text.isNotEmpty
+                    child: _serach.length != 0 || _controller.text.isNotEmpty
                         ? ListView.builder(
-                            itemCount: _serach.length,
+                            itemCount: _list.length,
                             itemBuilder: (context, i) {
-                              final t = _serach[i];
-                              return Container();
+                              final t = _list[i];
+                              return Container(
+                                child: Text(t.id.toString()),
+                              );
                             })
                         : ListView.builder(
-                        itemCount: _list.length,
-                        itemBuilder: (context, i) {
-                          final t = _list[i];
-                          return InkWell(
-                            onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //     builder: (context) => Conversiya(
-                              //         a.code, a.rate, a.ccy, a.ccyNmUz),
-                              //   ),
-                              // );
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.only(
-                                  top: 3, bottom: 3, left: 10, right: 10),
-                              // color: Colors.white,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    margin: EdgeInsets.only(bottom: _w / 80),
-                                    height: 75,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: const BorderRadius.all(
-                                          Radius.circular(20)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color:
-                                          Colors.black.withOpacity(0.3),
-                                          blurRadius: 40,
-                                          spreadRadius: 10,
-                                        ),
-                                      ],
-                                    ),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Wrap(
-                                          children: [
-                                            Container(
-                                              padding: const EdgeInsets.only(
-                                                  top: 14),
-                                              child: Text(
-                                                t.id,
-                                                style: const TextStyle(
-                                                    fontSize: 20,
-                                                    color: Colors.blueAccent),
-                                              ),
+                            itemCount: _list.length,
+                            itemBuilder: (context, i) {
+                              final t = _list[i];
+                              return InkWell(
+                                onTap: () {
+                                  // Navigator.push(
+                                  //   context,
+                                  //   MaterialPageRoute(
+                                  //     builder: (context) => Conversiya(
+                                  //         a.code, a.rate, a.ccy, a.ccyNmUz),
+                                  //   ),
+                                  // );
+                                },
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                      top: 3, bottom: 3, left: 10, right: 10),
+                                  // color: Colors.white,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        margin:
+                                            EdgeInsets.only(bottom: _w / 80),
+                                        height: 75,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: const BorderRadius.all(
+                                              Radius.circular(20)),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color:
+                                                  Colors.black.withOpacity(0.3),
+                                              blurRadius: 40,
+                                              spreadRadius: 10,
                                             ),
                                           ],
                                         ),
-                                        Column(
+                                        child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                          crossAxisAlignment:
-                                          CrossAxisAlignment.end,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Container(
-                                              padding: const EdgeInsets.only(
-                                                  right: 15),
-                                              child: Text(
-                                                t.u1,
-                                                style: const TextStyle(
-                                                    color: Colors.black54,
-                                                    fontSize: 12),
-                                              ),
+                                            Wrap(
+                                              children: [
+                                                Container(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 14),
+                                                  child: Text(
+                                                    t.id,
+                                                    style: const TextStyle(
+                                                        fontSize: 20,
+                                                        color:
+                                                            Colors.blueAccent),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                            Container(
-                                              padding: const EdgeInsets.only(
-                                                  right: 15),
-                                              child: Text(
-                                                t.unit2,
-                                                style: const TextStyle(
-                                                    color: Colors.black,
-                                                    fontSize: 20),
-                                              ),
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                Container(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 15),
+                                                  child: Text(
+                                                    t.u1,
+                                                    style: const TextStyle(
+                                                        color: Colors.black54,
+                                                        fontSize: 12),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 15),
+                                                  child: Text(
+                                                    t.unit2,
+                                                    style: const TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 20),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
                                           ],
                                         ),
-                                      ],
-                                    ),
+                                      ),
+                                      // Text(a.ccy),
+                                    ],
                                   ),
-                                  // Text(a.ccy),
-                                ],
-                              ),
-                            ),
-                          );
-                        }),
+                                ),
+                              );
+                            }),
                   ),
           ],
         ),

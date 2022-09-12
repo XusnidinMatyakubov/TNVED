@@ -9,6 +9,8 @@ class RandomWordsState extends State<RandomWords> {
   final List<TnvedCode> _list = <TnvedCode>[];
   final List<TnvedCode> _serach = [];
 
+  TextEditingController controller = new TextEditingController();
+
   var _postJson = [];
   var loading = false;
 
@@ -27,7 +29,7 @@ class RandomWordsState extends State<RandomWords> {
         final data = jsonDecode(response.body);
         setState(() {
           for (var i in data) {
-            _list.add(TnvedCode.formJson(i));
+            _list.add(TnvedCode.fromJson(i));
             loading = false;
           }
         });
@@ -35,7 +37,7 @@ class RandomWordsState extends State<RandomWords> {
     } catch (err) {}
   }
 
-  TextEditingController controller = new TextEditingController();
+
 
   onSearch(String text) async {
     _serach.clear();
@@ -128,7 +130,7 @@ class RandomWordsState extends State<RandomWords> {
                               color: Colors.black12,
                               padding: const EdgeInsets.all(5.0),
                               child: Text(
-                                l.startdate,
+                                l.startdate.toString(),
                                 style: const TextStyle(
                                     color: Colors.black),
                               ),
