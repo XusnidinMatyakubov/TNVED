@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:tnved/pages/DisconnectScreen.dart';
 import 'package:tnved/pages/Tnved.dart';
 import 'package:tnved/pages/TnvedList.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  var listener = InternetConnectionChecker().onStatusChange.listen((status) {
+    switch (status) {
+      case InternetConnectionStatus.connected:
+        runApp(const MyApp());
+        // runApp(const DiscannectScreen());
+        print('Internet connection.');
+        break;
+      case InternetConnectionStatus.disconnected:
+        runApp(const DiscannectScreen());
+        print('Internet disconnected.');
+        break;
+    }
+  });
+  await Future.delayed(Duration(seconds: 30));
+  await listener.cancel();
 }
 
 class MyApp extends StatelessWidget {
