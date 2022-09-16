@@ -30,7 +30,7 @@ class _DiscannectScreenState extends State<DiscannectScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'assets/gif/no-connection.gif',
+                  'images/gif/noConnection.gif',
                   width: 250,
                   height: 250,
                 ),
