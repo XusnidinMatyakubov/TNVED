@@ -352,17 +352,18 @@ class ErrorModal extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: AlertDialog(
-          title: Text(xato.toString()),
+
+          title: Text("Ilovadan qidirildi -> " + "'"+ xato.toString() +"'"),
           titleTextStyle: const TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
-          backgroundColor: Colors.greenAccent,
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18),
+          backgroundColor: Colors.orangeAccent,
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(20))),
-          content: const Text("Save successfully"),
+          content: const Text("Qidiruv natijasi 0", style: TextStyle(fontSize: 16),),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
+              child: const Text('Qaytish', style: TextStyle(color: Colors.black),),
             ),
           ],
         ),
