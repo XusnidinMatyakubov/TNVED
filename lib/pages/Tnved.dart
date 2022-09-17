@@ -22,7 +22,8 @@ class _TNVEDState extends State<TNVED> {
   var loading = false;
 
   GlobalKey<FormState> key = new GlobalKey<FormState>();
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
+
   String xato = "";
 
   _onSearch(String text) async {
@@ -41,7 +42,9 @@ class _TNVEDState extends State<TNVED> {
     return tnvedCode;
   }
 
+
   Future<TnvedCode?> onSearch(String text) async {
+
     setState(() {
       loading = true;
     });
@@ -97,6 +100,7 @@ class _TNVEDState extends State<TNVED> {
     } catch (err) {
       print(err);
     }
+    return null;
   }
 
   @override

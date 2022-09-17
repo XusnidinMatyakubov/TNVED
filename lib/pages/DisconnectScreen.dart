@@ -35,7 +35,7 @@ class _DiscannectScreenState extends State<DiscannectScreen> {
                   height: 250,
                 ),
                 const Text(
-                  "Iltimos internet borligiga ishonch hosil qiling",
+                  "Internet yoqilmagan",
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
@@ -55,7 +55,8 @@ class _DiscannectScreenState extends State<DiscannectScreen> {
                         icon: const Icon(Icons.refresh),
                         color: Colors.black,
                         onPressed: () {
-                          main();
+                          print("OK");
+                          return main();
                         },
                       ),
                     ),
@@ -68,7 +69,6 @@ class _DiscannectScreenState extends State<DiscannectScreen> {
                   //       // } else if (Platform.isIOS) {
                   //       //   exit(0);
                   //       // }
-                  //
                   //     },
                   // ),
                 ),
