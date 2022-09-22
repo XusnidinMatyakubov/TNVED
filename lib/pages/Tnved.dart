@@ -37,7 +37,6 @@ class _TNVEDState extends State<TNVED> {
     });
     setState(() {});
   }
-
   getTnved() {
     return tnvedCode;
   }
@@ -105,6 +104,7 @@ class _TNVEDState extends State<TNVED> {
 
   @override
   void initState() {
+    onSearch("");
     super.initState();
   }
 

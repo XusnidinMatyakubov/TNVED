@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tnved/pages/DisconnectScreen.dart';
 import 'package:tnved/pages/Tnved.dart';
-import 'package:tnved/pages/TnvedList.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 void main() async {
