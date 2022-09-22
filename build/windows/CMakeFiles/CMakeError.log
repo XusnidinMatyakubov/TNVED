@@ -1,0 +1,192 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+-532462766
+Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 25.08.2022 0:43:20.
+Проект "C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "Debug\".
+  Создание каталога "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Создание "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+MSBUILD : error : Это необработанное исключение в MSBuild - ПРОГОЛОСУЙТЕ ЗА СУЩЕСТВУЮЩУЮ ПРОБЛЕМУ ИЛИ СОЗДАЙТЕ НОВУЮ на сайте https://aka.ms/msbuild/unhandled. [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :     System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException". [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.ParseLine(String inputLine) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.LogEventsFromTextOutput(String singleLine, MessageImportance messageImportance) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.LogMessagesFromStandardErrorOrOutput(Queue dataQueue, ManualResetEvent dataAvailableSignal, MessageImportance messageImportance, StandardOutputOrErrorQueueType queueType) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.HandleToolNotifications(Process proc) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.TrackerExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<InitializeAndExecuteTask>d__24.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteBucket>d__19.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__18.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__13.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetEntry.<ProcessBucket>d__51.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetEntry.<ExecuteTarget>d__44.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetBuilder.<ProcessTargetStack>d__23.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetBuilder.<BuildTargets>d__10.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.RequestBuilder.<BuildProject>d__68.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.RequestBuilder.<BuildAndReport>d__59.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+Сборка проекта "C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" (целевой объект по умолчанию) (1) ->
+  MSBUILD : error : Это необработанное исключение в MSBuild - ПРОГОЛОСУЙТЕ ЗА СУЩЕСТВУЮЩУЮ ПРОБЛЕМУ ИЛИ СОЗДАЙТЕ НОВУЮ на сайте https://aka.ms/msbuild/unhandled. [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :     System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException". [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.ParseLine(String inputLine) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.LogEventsFromTextOutput(String singleLine, MessageImportance messageImportance) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.LogMessagesFromStandardErrorOrOutput(Queue dataQueue, ManualResetEvent dataAvailableSignal, MessageImportance messageImportance, StandardOutputOrErrorQueueType queueType) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.HandleToolNotifications(Process proc) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.TrackerExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.Utilities.ToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.VCToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.CPPTasks.TrackedVCToolTask.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<InitializeAndExecuteTask>d__24.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteBucket>d__19.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__18.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__13.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetEntry.<ProcessBucket>d__51.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetEntry.<ExecuteTarget>d__44.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetBuilder.<ProcessTargetStack>d__23.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.TargetBuilder.<BuildTargets>d__10.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.RequestBuilder.<BuildProject>d__68.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error : --- Конец трассировка стека из предыдущего расположения, где возникло исключение --- [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+MSBUILD : error :    в Microsoft.Build.BackEnd.RequestBuilder.<BuildAndReport>d__59.MoveNext() [C:\Users\MXZ16\AndroidStudioProjects\Flutter\tnved\build\windows\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:06.58
+MSBUILD : error MSB1025: внутренняя ошибка при выполнении MSBuild.
+System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException".
+   в Microsoft.Build.CPPTasks.VCToolTask.ParseLine(String inputLine)
+   в Microsoft.Build.CPPTasks.VCToolTask.LogEventsFromTextOutput(String singleLine, MessageImportance messageImportance)
+   в Microsoft.Build.Utilities.ToolTask.LogMessagesFromStandardErrorOrOutput(Queue dataQueue, ManualResetEvent dataAvailableSignal, MessageImportance messageImportance, StandardOutputOrErrorQueueType queueType)
+   в Microsoft.Build.Utilities.ToolTask.HandleToolNotifications(Process proc)
+   в Microsoft.Build.Utilities.ToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands)
+   в Microsoft.Build.CPPTasks.TrackedVCToolTask.TrackerExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands)
+   в Microsoft.Build.CPPTasks.TrackedVCToolTask.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands)
+   в Microsoft.Build.Utilities.ToolTask.Execute()
+   в Microsoft.Build.CPPTasks.VCToolTask.Execute()
+   в Microsoft.Build.CPPTasks.TrackedVCToolTask.Execute()
+   в Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()
+   в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.TaskBuilder.<InitializeAndExecuteTask>d__24.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteBucket>d__19.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__18.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.TaskBuilder.<ExecuteTask>d__13.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Build.BackEnd.TargetEntry.<ProcessBucket>d__51.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Build.BackEnd.TargetEntry.<ExecuteTarget>d__44.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в Microsoft.Build.BackEnd.TargetBuilder.<ProcessTargetStack>d__23.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.TargetBuilder.<BuildTargets>d__10.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.RequestBuilder.<BuildProject>d__68.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.RequestBuilder.<BuildAndReport>d__59.MoveNext()
+--- Конец трассировка стека из предыдущего расположения, где возникло исключение ---
+   в System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Microsoft.Build.BackEnd.RequestBuilder.<RequestThreadProc>d__58.MoveNext()
+
+MSBUILD : error MSB1025: внутренняя ошибка при выполнении MSBuild.
+System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException".
+   в Microsoft.Build.CommandLine.MSBuildApp.BuildProject(String projectFile, String[] targets, String toolsVersion, Dictionary`2 globalProperties, Dictionary`2 restoreProperties, ILogger[] loggers, LoggerVerbosity verbosity, DistributedLoggerRecord[] distributedLoggerRecords, Boolean needToValidateProject, String schemaFile, Int32 cpuCount, Boolean enableNodeReuse, TextWriter preprocessWriter, TextWriter targetsWriter, Boolean detailedSummary, ISet`1 warningsAsErrors, ISet`1 warningsNotAsErrors, ISet`1 warningsAsMessages, Boolean enableRestore, ProfilerLogger profilerLogger, Boolean enableProfiler, Boolean interactive, Boolean isolateProjects, GraphBuildOptions graphBuildOptions, Boolean lowPriority, String[] inputResultsCaches, String outputResultsCache, String commandLine)
+   в Microsoft.Build.CommandLine.MSBuildApp.Execute(String commandLine)
+
+Необработанное исключение: OutOfMemoryException.
+
+

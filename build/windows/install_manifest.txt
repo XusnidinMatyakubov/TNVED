@@ -1,0 +1,11 @@
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/images/gif/noConnection.gif
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/NOTICES
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/MXZ16/AndroidStudioProjects/Flutter/tnved/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
