@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform, exit;
-
 import 'package:flutter/services.dart';
-
 import '../main.dart';
 
 class DiscannectScreen extends StatefulWidget {
