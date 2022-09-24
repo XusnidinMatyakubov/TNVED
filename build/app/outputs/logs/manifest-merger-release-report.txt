@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:5:4-35:19
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:5:4-36:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.6.0] C:\Users\User\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
@@ -12,15 +12,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Us
 	android:label
 		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:6:9-30
 	android:icon
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:9:9-43
+	android:usesCleartextTraffic
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:7:9-44
 	android:name
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:7:9-42
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:8:9-42
 manifest
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\User\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -38,20 +40,20 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\User\.gradle\caches
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\User\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-3\ed9734c73cdec898947618088fbe87b0\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\User\.gradle\caches\transforms-3\58e3540d7f5a5bac6af9a8f8fab44363\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
-INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
 	package
 		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:2:5-27
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-36:12
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:1-37:12
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -108,43 +110,43 @@ INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\And
 		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml
 activity#uz.mxz.tnved.MainActivity
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:9:9-29:20
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:10:9-30:20
 	android:launchMode
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:12:13-43
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:13:13-43
 	android:hardwareAccelerated
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:15:13-47
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:16:13-47
 	android:windowSoftInputMode
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:16:13-55
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:17:13-55
 	android:exported
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:11:13-36
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:12:13-36
 	android:configChanges
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:14:13-163
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:15:13-163
 	android:theme
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:13:13-47
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:14:13-47
 	android:name
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:10:13-41
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:11:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:21:13-24:17
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:22:13-25:17
 	android:resource
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:23:15-52
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:24:15-52
 	android:name
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:22:15-70
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:23:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:25:13-28:29
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:26:17-68
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:27:17-68
 	android:name
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:27:17-76
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:28:17-76
 	android:name
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:28:27-74
 meta-data#flutterEmbedding
-ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:32:9-34:33
+ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:33:9-35:33
 	android:value
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:34:13-30
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:35:13-30
 	android:name
-		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:33:13-44
+		ADDED from D:\AndroidStudioProjects\FlutterApp\tnved\android\app\src\main\AndroidManifest.xml:34:13-44
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required

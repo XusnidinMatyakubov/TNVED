@@ -200,42 +200,43 @@ class _TNVEDState extends State<TNVED> {
                                             Expanded(
                                               child: Container(
                                                 padding:
-                                                    const EdgeInsets.all(5.0),
+                                                const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                                                 child: Text(
                                                   l.name,
                                                   style: const TextStyle(
+                                                    fontSize: 16.0,
                                                       color: Colors.black,
                                                       fontWeight:
                                                           FontWeight.w500),
                                                 ),
                                               ),
                                             ),
-                                            Wrap(
-                                              crossAxisAlignment:
-                                                  WrapCrossAlignment.end,
-                                              children: [
-                                                Container(
-                                                  color: Colors.black12,
-                                                  padding:
-                                                      const EdgeInsets.all(5.0),
-                                                  child: Text(
-                                                    l.u1,
-                                                    style: const TextStyle(
-                                                        color: Colors.black),
-                                                  ),
-                                                ),
-                                                Container(
-                                                  color: Colors.black12,
-                                                  padding:
-                                                      const EdgeInsets.all(5.0),
-                                                  child: Text(
-                                                    l.startdate.toString(),
-                                                    style: const TextStyle(
-                                                        color: Colors.black),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
+                                            // Wrap(
+                                            //   crossAxisAlignment:
+                                            //       WrapCrossAlignment.end,
+                                            //   children: [
+                                            //     Container(
+                                            //       color: Colors.black12,
+                                            //       padding:
+                                            //           const EdgeInsets.all(5.0),
+                                            //       child: Text(
+                                            //         l.u1,
+                                            //         style: const TextStyle(
+                                            //             color: Colors.black),
+                                            //       ),
+                                            //     ),
+                                            //     Container(
+                                            //       color: Colors.black12,
+                                            //       padding:
+                                            //           const EdgeInsets.all(5.0),
+                                            //       child: Text(
+                                            //         l.startdate.toString(),
+                                            //         style: const TextStyle(
+                                            //             color: Colors.black),
+                                            //       ),
+                                            //     ),
+                                            //   ],
+                                            // ),
                                           ],
                                         ),
                                       ],
@@ -282,42 +283,43 @@ class _TNVEDState extends State<TNVED> {
                                             Expanded(
                                               child: Container(
                                                 padding:
-                                                    const EdgeInsets.all(5.0),
+                                                    const EdgeInsets.only(left: 10, right: 10, bottom: 10),
                                                 child: Text(
                                                   t.name,
                                                   style: const TextStyle(
+                                                    fontSize: 16.0,
                                                       color: Colors.black,
                                                       fontWeight:
                                                           FontWeight.w500),
                                                 ),
                                               ),
                                             ),
-                                            Wrap(
-                                              crossAxisAlignment:
-                                                  WrapCrossAlignment.end,
-                                              children: [
-                                                Container(
-                                                  color: Colors.black12,
-                                                  padding:
-                                                      const EdgeInsets.all(5.0),
-                                                  child: Text(
-                                                    t.u1,
-                                                    style: const TextStyle(
-                                                        color: Colors.black),
-                                                  ),
-                                                ),
-                                                Container(
-                                                  color: Colors.black12,
-                                                  padding:
-                                                      const EdgeInsets.all(5.0),
-                                                  child: Text(
-                                                    t.startdate.toString(),
-                                                    style: const TextStyle(
-                                                        color: Colors.black),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
+                                            // Wrap(
+                                            //   crossAxisAlignment:
+                                            //       WrapCrossAlignment.end,
+                                            //   children: [
+                                            //     Container(
+                                            //       color: Colors.black12,
+                                            //       padding:
+                                            //           const EdgeInsets.all(5.0),
+                                            //       child: Text(
+                                            //         t.u1,
+                                            //         style: const TextStyle(
+                                            //             color: Colors.black),
+                                            //       ),
+                                            //     ),
+                                            //     Container(
+                                            //       color: Colors.black12,
+                                            //       padding:
+                                            //           const EdgeInsets.all(5.0),
+                                            //       child: Text(
+                                            //         t.startdate.toString(),
+                                            //         style: const TextStyle(
+                                            //             color: Colors.black),
+                                            //       ),
+                                            //     ),
+                                            //   ],
+                                            // ),
                                           ],
                                         ),
                                       ],
