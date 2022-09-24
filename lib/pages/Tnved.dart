@@ -191,7 +191,7 @@ class _TNVEDState extends State<TNVED> {
                                           // ),
                                         ),
                                         const Divider(
-                                          color: Colors.black12,
+                                          color: Colors.black,
                                         ),
                                         Row(
                                           mainAxisAlignment:
@@ -274,7 +274,7 @@ class _TNVEDState extends State<TNVED> {
                                           // ),
                                         ),
                                         const Divider(
-                                          color: Colors.black12,
+                                          color: Colors.black,
                                         ),
                                         Row(
                                           mainAxisAlignment:
