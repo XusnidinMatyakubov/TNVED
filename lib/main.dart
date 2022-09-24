@@ -2,13 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:tnved/pages/DisconnectScreen.dart';
 import 'package:tnved/pages/Tnved.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'dart:io';
+
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+  }
+}
 
 void main() async {
   var listener = InternetConnectionChecker().onStatusChange.listen((status) {
     switch (status) {
       case InternetConnectionStatus.connected:
+        HttpOverrides.global = new MyHttpOverrides();
         runApp(const MyApp());
-        // runApp(const DiscannectScreen());
         print('Internet connection.');
         break;
       case InternetConnectionStatus.disconnected:
@@ -17,7 +27,7 @@ void main() async {
         break;
     }
   });
-  await Future.delayed(Duration(seconds: 30));
+  await Future.delayed(const Duration(seconds: 10));
   await listener.cancel();
 }
 
