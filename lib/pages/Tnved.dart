@@ -6,6 +6,9 @@ import 'package:tnved/modal/TnvedCode.dart';
 import 'package:tnved/pages/ApiUrl.dart';
 import 'package:http/http.dart' as http;
 import 'package:tnved/pages/simplified_uri.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:tnved/routes/AppOpenAdManager.dart';
+import 'package:tnved/routes/feature_store_secrets.dart';
 
 class TNVED extends StatefulWidget {
   const TNVED({Key? key}) : super(key: key);
@@ -14,10 +17,15 @@ class TNVED extends StatefulWidget {
   State<TNVED> createState() => _TNVEDState();
 }
 
-class _TNVEDState extends State<TNVED> {
+class _TNVEDState extends State<TNVED> with WidgetsBindingObserver{
   final List<TnvedCode> _list = [];
   List<TnvedCode> _serach = [];
   static TnvedCode tnvedCode = [] as TnvedCode;
+
+  AppOpenAdManager appOpenAdManager = AppOpenAdManager();
+  bool isPaused = false;
+  bool _adLoaded = false;
+  late BannerAd _bannerAd;
 
   var loading = false;
 
@@ -106,6 +114,50 @@ class _TNVEDState extends State<TNVED> {
   void initState() {
     onSearch("");
     super.initState();
+    appOpenAdManager.loadAd();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    if (state == AppLifecycleState.paused) {
+      isPaused = true;
+    }
+    if (state == AppLifecycleState.resumed && isPaused) {
+      print("Resumed==========================");
+      appOpenAdManager.showAdIfAvailable();
+      isPaused = false;
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    WidgetsBinding.instance.removeObserver(this);
+    _bannerAd.dispose();
+  }
+
+  @override
+  void didChangeDependencies(){
+    super.didChangeDependencies();
+    _loadAd();
+  }
+
+  Future<void> _loadAd() async {
+    _bannerAd = BannerAd(
+      size: AdSize.banner,
+      adUnitId: MySecretsHelper.bannerAdUnitId,
+      request: const AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (Ad ad) => setState(() {
+          _bannerAd =ad as BannerAd;
+          _adLoaded = true;
+        }),
+        onAdFailedToLoad: (ad, error) => ad.dispose(),
+      ),
+    );
+    return _bannerAd.load();
   }
 
   final colorBg = Colors.grey[300];
@@ -118,6 +170,12 @@ class _TNVEDState extends State<TNVED> {
           title: const Center(
         child: Text("TNVED KOD"),
       )),
+      bottomNavigationBar: Container(
+        alignment: Alignment.center,
+        width: _bannerAd.size.width.toDouble(),
+        height: _bannerAd.size.height.toDouble(),
+        child: _adLoaded ? AdWidget(ad: _bannerAd) : const LinearProgressIndicator(),
+      ),
       body: Container(
         child: Column(
           children: <Widget>[

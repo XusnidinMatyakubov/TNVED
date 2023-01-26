@@ -13,22 +13,26 @@ class MyHttpOverrides extends HttpOverrides {
   }
 }
 
+// void main() async {
+//   var listener = InternetConnectionChecker().onStatusChange.listen((status) {
+//     switch (status) {
+//       case InternetConnectionStatus.connected:
+//         HttpOverrides.global = new MyHttpOverrides();
+//         runApp(const MyApp());
+//         print('Internet connection.');
+//         break;
+//       case InternetConnectionStatus.disconnected:
+//         runApp(const DiscannectScreen());
+//         print('Internet disconnected.');
+//         break;
+//     }
+//   });
+//   await Future.delayed(const Duration(seconds: 10));
+//   await listener.cancel();
+// }
+
 void main() async {
-  var listener = InternetConnectionChecker().onStatusChange.listen((status) {
-    switch (status) {
-      case InternetConnectionStatus.connected:
-        HttpOverrides.global = new MyHttpOverrides();
-        runApp(const MyApp());
-        print('Internet connection.');
-        break;
-      case InternetConnectionStatus.disconnected:
-        runApp(const DiscannectScreen());
-        print('Internet disconnected.');
-        break;
-    }
-  });
-  await Future.delayed(const Duration(seconds: 10));
-  await listener.cancel();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
