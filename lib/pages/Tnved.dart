@@ -10,6 +10,8 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tnved/routes/AppOpenAdManager.dart';
 import 'package:tnved/routes/feature_store_secrets.dart';
 
+import '../modal/CustomBannerAd.dart';
+
 class TNVED extends StatefulWidget {
   const TNVED({Key? key}) : super(key: key);
 
@@ -414,21 +416,45 @@ class ErrorModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    bottomNavigationBar: const CustomBannerAd(),
       body: Container(
-        child: AlertDialog(
-
-          title: Text("Ilovadan qidirildi -> " + "'"+ xato.toString() +"'"),
-          titleTextStyle: const TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18),
-          backgroundColor: Colors.orangeAccent,
-          shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(20))),
-          content: const Text("Qidiruv natijasi 0", style: TextStyle(fontSize: 16),),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('Qaytish', style: TextStyle(color: Colors.black),),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const CustomBannerAd(),
+            const SizedBox(
+              height: 15,
             ),
+            const CustomBannerAd(),
+            const SizedBox(
+              height: 15,
+            ),
+            const CustomBannerAd(),
+            AlertDialog(
+
+              title: Text("Ilovadan qidirildi -> " + "'"+ xato.toString() +"'"),
+              titleTextStyle: const TextStyle(
+                  fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18),
+              backgroundColor: Colors.orangeAccent,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              content: const Text("Qidiruv natijasi 0", style: TextStyle(fontSize: 16),),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context, 'OK'),
+                  child: const Text('Qaytish', style: TextStyle(color: Colors.black),),
+                ),
+              ],
+            ),
+            const CustomBannerAd(),
+            const SizedBox(
+              height: 15,
+            ),
+            const CustomBannerAd(),
+            const SizedBox(
+              height: 15,
+            ),
+            const CustomBannerAd(),
           ],
         ),
       ),

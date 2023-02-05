@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.2" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.23" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.14" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.18" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.8" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-3.0.2" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/google_mobile_ads-2.3.0" />
-      <root url="file://$PROJECT_DIR$/../../../src/sdk-2022-3.3/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-3.0.2" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.14" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.8" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.2" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-3.0.2" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/google_mobile_ads-2.3.0" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.18" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-3.0.2" />
+      <root url="file://C:/scr/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.23" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,14 +1,14 @@
 <lint-module
     format="1"
-    dir="D:\AndroidStudioProjects\FlutterApp\tnved\android\app"
+    dir="D:\Loyihalar\flutter\tnved\android\app"
     name=":app"
     type="APP"
     maven="android:app:"
     gradle="7.1.2"
-    buildFolder="D:\AndroidStudioProjects\FlutterApp\tnved\build\app"
-    bootClassPath="D:\src\sdk-2022\bin\platforms\android-31\android.jar;D:\src\sdk-2022\bin\build-tools\30.0.3\core-lambda-stubs.jar"
+    buildFolder="D:\Loyihalar\flutter\tnved\build\app"
+    bootClassPath="C:\scr\flutter\platforms\android-33\android.jar;C:\scr\flutter\build-tools\30.0.3\core-lambda-stubs.jar"
     javaSourceLevel="1.8"
-    compileTarget="android-31">
+    compileTarget="android-33">
   <lintOptions
       abortOnError="true"
       absolutePaths="true"

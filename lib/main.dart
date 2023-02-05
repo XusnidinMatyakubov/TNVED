@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tnved/pages/DisconnectScreen.dart';
+import 'package:flutter/services.dart';
 import 'package:tnved/pages/Tnved.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'dart:io';
+import 'dart:io' show Platform;
 
 class MyHttpOverrides extends HttpOverrides {
   @override
@@ -31,7 +32,29 @@ class MyHttpOverrides extends HttpOverrides {
 //   await listener.cancel();
 // }
 
-void main() async {
+AppOpenAd? appOpenAd;
+loadAppOpenAd(){
+  AppOpenAd.load(
+      adUnitId: Platform.isAndroid
+          ? 'ca-app-pub-2837683596775112/7596513283'
+          : 'ca-app-pub-3940256099942544/5662855259',
+      request: const AdRequest(),
+      adLoadCallback: AppOpenAdLoadCallback(
+          onAdLoaded: (ad){
+            appOpenAd=ad;
+            appOpenAd!.show();
+          },
+          onAdFailedToLoad: (error){
+            print(error);
+          }
+      ),
+      orientation: AppOpenAd.orientationPortrait);
+}
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+  loadAppOpenAd();
   runApp(const MyApp());
 }
 

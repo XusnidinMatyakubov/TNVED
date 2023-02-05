@@ -63,7 +63,7 @@ to store and obfuscate secrets. For more details see [Andrea's tutorial](https:/
 // ignore: avoid_classes_with_only_static_members
 class MySecretsHelper {
   static String get bannerAdUnitId {
-    const kAndroidDebugAdId = 'ca-app-pub-2837683596775112/7205272258';
+    const kAndroidDebugAdId = 'ca-app-pub-2837683596775112/9901729530';
     const kIosDebugAdId = '';
     if (Platform.isAndroid) {
       return kDebugMode
